@@ -1,4 +1,4 @@
-import image1 from "images/bia-5-ngay-di-bui_optimized.jpg";
+// import image1 from "images/bia-5-ngay-di-bui_optimized.jpg";
 import image2 from "images/img_1033_optimized.png";
 import image3 from "images/img_1686_optimized.png";
 import image4 from "images/img_1687_optimized.png";
