@@ -104,10 +104,11 @@ function App() {
         })}
       </div>
 
-      <div className="flex items-center justify-between py-8">
+      <div className="flex flex-col items-center justify-between py-8 sm:flex-row md:flex-row lg:flex-row">
         <div className="flex">
           {ICON.map((item) => (
             <img
+              loading="lazy"
               key={item.id}
               src={item.src}
               alt="icon"
@@ -115,7 +116,7 @@ function App() {
             />
           ))}
         </div>
-        <div>© 2021 by Hoa Cua.</div>
+        <div>All images @ Copyright Hoa Cua</div>
       </div>
     </div>
   );
