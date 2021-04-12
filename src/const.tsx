@@ -19,13 +19,13 @@ import facebook from "images/icon/facebook.svg";
 import instagram from "images/icon/instagram.svg";
 import youtube from "images/icon/youtube.svg";
 
-export const NAVIGATION: { id: number; name: string }[] = [
-  { id: 1, name: "Animation" },
-  { id: 2, name: "Illustration" },
-  { id: 3, name: "GIF" },
+export const NAVIGATION: { id: number; name: string; to: string }[] = [
+  { id: 1, name: "Animation", to: "/animation" },
+  { id: 2, name: "Illustration", to: "/illustration" },
+  { id: 3, name: "GIF", to: "/gif" },
   // { id: 4, name: "Shop" },
-  { id: 5, name: "Contact" },
-  { id: 6, name: "About" },
+  { id: 5, name: "Contact", to: "/contact" },
+  { id: 6, name: "About", to: "/about" },
 ];
 
 export const ICON: { id: number; src: string }[] = [
