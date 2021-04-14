@@ -60,6 +60,7 @@ const IMAGES: { id: number; src: string }[] = [
   { id: 12, src: image12 },
   { id: 12, src: image12 },
   { id: 12, src: image12 },
+  { id: 12, src: image12 },
 ];
 
 export const logo: string = logoSrc;

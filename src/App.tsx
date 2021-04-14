@@ -8,7 +8,7 @@ import Body from "components/Body";
 function App() {
   const [currentNav, setCurrentNav] = useState(1);
 
-  console.log(currentNav);
+  // console.log(currentNav);
   // const lazyLoad = (target: any) => {
   //   const io = new IntersectionObserver((entries, observer) => {
   //     entries.forEach((entry) => {
