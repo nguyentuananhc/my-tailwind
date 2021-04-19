@@ -63,7 +63,7 @@ const Body = (props: { currentNav: number }) => {
         />
       </div>
       {dimension.width !== 0 &&
-        IMAGES.map((item, index) => {
+        IMAGES.slice(3, IMAGES.length).map((item, index) => {
           return (
             <div
               key={index}

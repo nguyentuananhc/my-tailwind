@@ -1,13 +1,13 @@
-import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Navigation from "components/Navigation";
 import Footer from "components/Footer";
-import Body from "components/Body";
+// import Body from "components/Body";
+import GridBody from "components/GridBody";
+
+import About from "containers/About";
 
 function App() {
-  const [currentNav, setCurrentNav] = useState(1);
-
   // console.log(currentNav);
   // const lazyLoad = (target: any) => {
   //   const io = new IntersectionObserver((entries, observer) => {
@@ -33,10 +33,13 @@ function App() {
   return (
     <div className="container px-4 mx-auto">
       <Router>
-        <Navigation currentNav={currentNav} setCurrentNav={setCurrentNav} />
+        <Navigation />
         <Switch>
+          <Route exact path="/about">
+            <About />
+          </Route>
           <Route path="/">
-            <Body currentNav={currentNav} />
+            <GridBody />
           </Route>
         </Switch>
       </Router>

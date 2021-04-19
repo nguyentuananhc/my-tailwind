@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import { logo, NAVIGATION } from "const";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-export default function Navigation(props: {
-  setCurrentNav: any;
-  currentNav: number;
-}) {
-  const { setCurrentNav, currentNav } = props;
+export default function Navigation() {
+  const location = useLocation();
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -21,7 +19,7 @@ export default function Navigation(props: {
               to="/"
               className="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"
             >
-              HOA CUA
+              Len illustrator
             </Link>
           </div>
 
@@ -57,9 +55,8 @@ export default function Navigation(props: {
                 key={item.id}
                 to={item.to}
                 className={`${
-                  currentNav === item.id && "bg-gray-200"
+                  location.pathname === item.to && "bg-gray-200"
                 } px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:bg-gray-200`}
-                onClick={() => setCurrentNav(item.id)}
                 // className="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
               >
                 {item.name}

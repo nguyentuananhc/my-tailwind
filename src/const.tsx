@@ -11,6 +11,7 @@ import image10 from "images/img_7681_optimized.png";
 import image11 from "images/img_7687_optimized.png";
 import image12 from "images/img_7777_optimized.png";
 import logoSrc from "images/logo/logo.png";
+import avatarSrc from "images/logo/avatar.png";
 
 import behance from "images/icon/behance.svg";
 import dribbble from "images/icon/dribbble.svg";
@@ -39,8 +40,7 @@ export const ICON: { id: number; src: string }[] = [
 
 const IMAGES: { id: number; src: string }[] = [
   // { id: 1, src: image1 },
-  { id: 3, src: image3 },
-
+  { id: 1, src: image3 },
   { id: 2, src: image2 },
   { id: 3, src: image3 },
   { id: 4, src: image4 },
@@ -52,17 +52,17 @@ const IMAGES: { id: number; src: string }[] = [
   { id: 10, src: image10 },
   { id: 11, src: image11 },
   { id: 12, src: image12 },
-  { id: 12, src: image12 },
-  { id: 12, src: image12 },
-  { id: 12, src: image12 },
-  { id: 12, src: image12 },
-  { id: 12, src: image12 },
-  { id: 12, src: image12 },
-  { id: 12, src: image12 },
-  { id: 12, src: image12 },
-  { id: 12, src: image12 },
+  { id: 13, src: image12 },
+  { id: 14, src: image12 },
+  { id: 15, src: image12 },
+  { id: 16, src: image12 },
+  { id: 17, src: image12 },
+  { id: 18, src: image12 },
+  { id: 19, src: image12 },
+  { id: 20, src: image12 },
 ];
 
 export const logo: string = logoSrc;
+export const avatar: string = avatarSrc;
 
 export default IMAGES;
