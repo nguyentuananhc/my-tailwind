@@ -67,7 +67,7 @@ function App() {
           alt="mountain3"
         />
         <img
-          src="img/sky.png"
+          src={Parallax[5].src}
           className="sky translate"
           data-speed="0.5"
           alt="sky"
