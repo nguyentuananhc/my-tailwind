@@ -38,48 +38,47 @@ function App() {
 
   return (
     <div className="container px-4 mx-auto">
-      <header>
-        <h1 className="big-title translate" data-speed="0.1">
-          Discover.
-        </h1>
-        <img
-          src={Parallax[4].src}
-          className="person translate"
-          data-speed="-0.25"
-          alt="person"
-        />
-        <img
-          src={Parallax[1].src}
-          className="mountain1 translate"
-          data-speed="-0.2"
-          alt="mountain1"
-        />
-        <img
-          src={Parallax[2].src}
-          className="mountain2 translate"
-          data-speed="0.4"
-          alt="mountain2"
-        />
-        <img
-          src={Parallax[3].src}
-          className="mountain3 translate"
-          data-speed="0.3"
-          alt="mountain3"
-        />
-        <img
-          src={Parallax[5].src}
-          className="sky translate"
-          data-speed="0.5"
-          alt="sky"
-        />
-      </header>
-
-      <section>
-        <div className="shadow"></div>
-      </section>
-
       <Router>
-        <Navigation />
+        <header>
+          <h1 className="big-title translate" data-speed="0.1">
+            Len illustrator.
+          </h1>
+          <img
+            src={Parallax[4].src}
+            className="person translate"
+            data-speed="-0.25"
+            alt="person"
+          />
+          <img
+            src={Parallax[1].src}
+            className="mountain1 translate"
+            data-speed="-0.2"
+            alt="mountain1"
+          />
+          <img
+            src={Parallax[2].src}
+            className="mountain2 translate"
+            data-speed="0.4"
+            alt="mountain2"
+          />
+          <img
+            src={Parallax[3].src}
+            className="mountain3 translate"
+            data-speed="0.3"
+            alt="mountain3"
+          />
+          <img
+            src={Parallax[5].src}
+            className="sky translate"
+            data-speed="0.5"
+            alt="sky"
+          />
+          <Navigation />
+        </header>
+
+        <section>
+          <div className="shadow"></div>
+        </section>
         <Switch>
           <Route exact path="/about">
             <About />

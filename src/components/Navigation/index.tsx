@@ -10,7 +10,7 @@ export default function Navigation() {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+    <div className="absolute z-30 w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
       <div className="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row ">
         <div className="flex flex-row items-center justify-between py-6">
           <div className="flex items-center">
@@ -19,7 +19,7 @@ export default function Navigation() {
               to="/"
               className="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"
             >
-              Len illustrator
+              Hoa
             </Link>
           </div>
 

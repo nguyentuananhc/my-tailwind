@@ -15,7 +15,7 @@ const GridBody = () => {
   };
 
   return (
-    <div className="grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-4 auto-rows-min">
+    <div className="grid grid-cols-2 gap-2 mt-4 md:grid-cols-3 md:gap-4 auto-rows-min">
       {IMAGES.map((item, index) => {
         return (
           <div
