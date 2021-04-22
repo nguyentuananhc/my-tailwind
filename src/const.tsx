@@ -20,6 +20,13 @@ import facebook from "images/icon/facebook.svg";
 import instagram from "images/icon/instagram.svg";
 import youtube from "images/icon/youtube.svg";
 
+import image from "images/tinified/image.jpg";
+import mountain1 from "images/tinified/mountain1.png";
+import mountain2 from "images/tinified/mountain2.png";
+import mountain3 from "images/tinified/mountain3.png";
+import person from "images/tinified/person.png";
+import sky from "images/tinified/sky.png";
+
 export const NAVIGATION: { id: number; name: string; to: string }[] = [
   { id: 1, name: "Animation", to: "/animation" },
   { id: 2, name: "Illustration", to: "/illustration" },
@@ -27,6 +34,15 @@ export const NAVIGATION: { id: number; name: string; to: string }[] = [
   // { id: 4, name: "Shop" },
   { id: 5, name: "Contact", to: "/contact" },
   { id: 6, name: "About", to: "/about" },
+];
+
+export const Parallax: { id: number; src: string }[] = [
+  { id: 0, src: image },
+  { id: 1, src: mountain1 },
+  { id: 2, src: mountain2 },
+  { id: 3, src: mountain3 },
+  { id: 4, src: person },
+  { id: 5, src: sky },
 ];
 
 export const ICON: { id: number; src: string }[] = [

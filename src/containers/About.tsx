@@ -1,3 +1,4 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { avatar } from "const";
 
 const About = () => {
@@ -30,11 +31,18 @@ const About = () => {
       </div>
       <div className="flex items-center justify-center p-8">
         <div className="flex flex-col items-center justify-center ">
-          <img
+          {/* <img
             className="object-cover rounded-full w-44 h-44 md:h-80 md:w-80"
             src={avatar}
             alt="avatar"
-          />
+          /> */}
+          <LazyLoadImage
+            // className="object-cover w-full h-full overflow-hidden transition duration-200 ease-in transform rounded shadow-md w-100 h-100 delay-0 hover:scale-150"
+            className="object-cover rounded-full w-44 h-44 md:h-80 md:w-80"
+            alt="avatar"
+            effect="blur"
+            src={avatar}
+          ></LazyLoadImage>
           <span>Photo by Hoa</span>
         </div>
       </div>

@@ -36,9 +36,10 @@ const GridBody = () => {
             <div
               className={`absolute inset-0 flex ${
                 currentHover === index ? "flex" : "hidden"
-              }  items-center justify-center w-full h-full text-white bg-gray-500 bg-opacity-50 rounded shadow-md`}
+              } flex-col  items-center justify-center w-full h-full text-white bg-gray-500 bg-opacity-50 rounded shadow-md`}
             >
-              Lorem, ipsum dolor .
+              <p>Lorem, ipsum dolor .</p>
+              <p>-Editorial Illustration-</p>
             </div>
           </div>
         );
